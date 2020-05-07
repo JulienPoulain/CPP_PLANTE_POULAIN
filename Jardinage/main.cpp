@@ -17,6 +17,8 @@ int main()
     PlanteCarnivore *plantusCarnivorus = new PlanteCarnivore("PlantusCarnivorus");
 
     laPlante->afficher();
+    fleurus->afficher();
+    plantusCarnivorus->afficher();
 
     return 0;
 }

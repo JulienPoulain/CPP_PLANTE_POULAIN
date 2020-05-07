@@ -45,4 +45,8 @@ void Botaniste::tailler(Plante *plante) {
     plante->tailler();
 }
 
+void Botaniste::mouche(PlanteCarnivore *planteCarnivore) {
+    planteCarnivore->mangerViande();
+}
+
 #endif

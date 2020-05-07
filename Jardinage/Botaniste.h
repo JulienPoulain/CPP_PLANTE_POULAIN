@@ -6,6 +6,7 @@
 #include <vector>
 
 #include "Plante.h"
+#include "PlanteCarnivore.h"
 
 class Botaniste {
     private:
@@ -27,6 +28,8 @@ class Botaniste {
         void nourrir(Plante *plante);
         void arroser(Plante *plante);
         void tailler(Plante *plante);
+
+        void mouche(PlanteCarnivore *planteCarnivore);
 };
 
 #endif

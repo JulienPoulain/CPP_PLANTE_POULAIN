@@ -16,7 +16,10 @@ PlanteCarnivore::~PlanteCarnivore() {}
 // METHODES
 
 void PlanteCarnivore::afficher() const {
-    std::cout << _nom << " Sante:" << _sante << "/" << _santeMax << " Hydratee:" << _isArrosee << std::endl;
+    std::cout << _nom << " Sante:" << _sante << "/" << _santeMax << " Hydratee:" << _isArrosee;
+    if (_digestion > 0) std::cout << "Digère sa mouche";
+    else std::cout << "À très faim";
+    std::cout << std::endl;
 }
 
 void PlanteCarnivore::croitre() {
