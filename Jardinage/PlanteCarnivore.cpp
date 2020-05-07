@@ -44,6 +44,9 @@ void PlanteCarnivore::croitre() {
 
     _valeur = _maturite;
 
+    _digestion -= 1;
+    if (_digestion < 0) _digestion = 0;
+
     _isArrosee = false;
     _isNourrie = false;
     _isTaillee = false;
